@@ -47,4 +47,5 @@ The application is built using **React** and deployed via **Netlify**. Here's a 
 - The base URL for the API is stored in a `.env` file using a variable like:
 
   ```env
-  REACT_APP_API_URL=https://your-api-url.com
+  REACT_APP_SKIP_DATA=https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft
+
