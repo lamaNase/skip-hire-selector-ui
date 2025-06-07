@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# 🛠️ Skip Hire Selector UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and responsive web application that helps users choose the right skip size for their needs.
 
-## Available Scripts
+[🌐 Live Demo](https://skip-hire-selector-ui.netlify.app/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📋 Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The **Skip Hire Selector UI** allows users to view and compare available skip sizes. It's structured as a clean React-based UI with a component-based architecture and dynamic rendering of data fetched from an API.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🔹 **Responsive Design** using CSS media queries
+- 🔹 **Component-Based Architecture** with reusable elements
+- 🔹 **Environment Variable Support** using `.env` files
+- 🔹 Clean layout with intuitive user experience
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ How It's Built
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application is built using **React** and deployed via **Netlify**. Here's a high-level breakdown of the structure and logic:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🧱 Page Structure
 
-### `npm run eject`
+- **Header Component**  
+  Displays the site’s title or branding at the top.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **SkipList Component**  
+  Responsible for rendering a list of skips. It:
+  - Reads an array of skip objects (fetched from the API)
+  - Renders individual `SkipItem` components
+  - Passes the appropriate props to each `SkipItem`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **SkipItem Component**  
+  Displays specific information about a single skip (e.g., size, price, description).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📦 API Integration
 
-## Learn More
+- The application fetches skip data from an external API.
+- The base URL for the API is stored in a `.env` file using a variable like:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  ```env
+  REACT_APP_API_URL=https://your-api-url.com
