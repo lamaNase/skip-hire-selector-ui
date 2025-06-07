@@ -7,7 +7,6 @@ export default function SkipSizeCard(props) {
         image,
         size,
         description,
-        dimensions,
         onSelect,
         allowed_on_road,
         isSelected,

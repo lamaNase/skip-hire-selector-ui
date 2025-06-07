@@ -21,7 +21,6 @@ export default function SkipSizeList({ skips }) {
                             image="images/skipImage.jpg"
                             size={skip.size}
                             description={`${skip.hire_period_days} day hire period`}
-                            dimensions={`Approx: ${skip.size * 1.2}m x 1.7m x 2m`}
                             onSelect={() => handleSelect(skip.id)}
                             isSelected={selectedSkipId === skip.id}
                             allowed_on_road={skip.allowed_on_road}
