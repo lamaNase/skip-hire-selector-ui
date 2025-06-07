@@ -49,3 +49,5 @@ The application is built using **React** and deployed via **Netlify**. Here's a 
   ```env
   REACT_APP_SKIP_DATA=https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft
 
+- Since the API URL is the same for both development and production, only a single .env file is used.
+- In future iterations, environment-specific files like .env.development and .env.production can be introduced if needed.
