@@ -1,0 +1,15 @@
+/* components/UI/ErrorMessage.module.css */
+.error_container {
+    padding: 1rem 2rem;
+    background-color: #ffe6e6;
+    border: 1px solid #ff4d4d;
+    border-radius: 8px;
+    margin: 1rem auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.error_text {
+    color: #cc0000;
+    font-weight: 600;
+}
