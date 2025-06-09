@@ -51,3 +51,8 @@ The application is built using **React** and deployed via **Netlify**. Here's a 
 
 - Since the API URL is the same for both development and production, only a single .env file is used.
 - In future iterations, environment-specific files like .env.development and .env.production can be introduced if needed.
+
+# 📝 Notes
+1- I did not find the source images for each skip, so I downloaded one of the skip images from your website and used it as a fixed image for all skips.
+
+2- The price for each skip (e.g., £211, £300, etc.) was unclear in terms of how it is calculated. Therefore, I used placeholder fixed prices for now. These can be updated later once the pricing logic is clarified.
